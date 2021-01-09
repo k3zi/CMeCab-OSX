@@ -2,5 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CMeCab"
+    name: "CMeCab",
+    products: [
+        .library(name: "CMeCab", targets: ["CMeCab"])
+    ],
+    targets: [
+        .systemLibrary(name: "CMeCab")
+    ]
 )
